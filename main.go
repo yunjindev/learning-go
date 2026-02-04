@@ -1,4 +1,4 @@
-// PAGE NUMBER: 48/374 -- FEB 4, 2026
+// PAGE NUMBER: 53/374 -- FEB 4, 2026
 // LOCK IN 
 
 package main
@@ -6,8 +6,10 @@ package main
 import ( "fmt" )
 
 func main() {
-	var s string = "Hello There"
-	var s2 string = s[4:7]
-	fmt.Println(s,s2) // Hello There & o th
-
+	nilMap := map[string][]int {
+		"Dan" : []int{2,3,4,5},
+		"Billy" : []int{5,42,1,6,7},
+		"James" : []int{4},
+	}
+	fmt.Println(nilMap)
 }
