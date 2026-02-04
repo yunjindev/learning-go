@@ -1,4 +1,4 @@
-// PAGE NUMBER: 41/374 -- FEB 3, 2026
+// PAGE NUMBER: 42/374 -- FEB 3, 2026
 // LOCK IN 
 
 package main
@@ -6,8 +6,8 @@ package main
 import ( "fmt" )
 
 func main() {
-	var x []int
-	var y = []int{20, 30}
-	x= append(x,y...)
-	fmt.Println(x)
+	var nilSlice []int
+	var zeroSlice = []int{}
+	fmt.Println(nilSlice == nil)
+	fmt.Println(zeroSlice == nil)
 }
