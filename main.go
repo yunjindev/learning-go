@@ -1,24 +1,26 @@
-// PAGE NUMBER: 58/374 -- FEB 4, 2026
+// PAGE NUMBER: 61/374 -- FEB 4, 2026
 // LOCK IN 
 
 package main
 
+import "fmt"
 
+// TODO find out what the type is in a struct
 func main() {
-	 type person struct {
-		 name string
-		 age int
-		 pet string
-	 }
-	 var fred person
-	 bob := person{}
-	 julia := person{
-		 "julia",
-		 40,
-		 "cat",
-	 }
-	 beth := person{
-		 age: 30,
-		 name: "bethany",
-	 }
+	type firstPerson struct {
+		name string
+		age int
+}
+
+	f := firstPerson {
+		name: "bob",
+		age: 50,
+	}
+
+	var g struct {
+		name string
+		ages int
+	}
+	g = f
+	fmt.Println(f == g)
 }
