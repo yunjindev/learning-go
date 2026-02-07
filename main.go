@@ -1,4 +1,4 @@
-// PAGE NUMBER: 71/374 -- FEB 4, 2026
+// PAGE NUMBER: 73/374 -- FEB 4, 2026
 // LOCK IN 
 
 package main
@@ -9,18 +9,12 @@ import (
 )
 
 func main() {
-	for i := 1; i < 101; i++ {
-		if i % 3 == 0 && i % 5 == 0 {
-			fmt.Println("FizzBuzz ", i)
+	samples := []string{"Hello", "apple_n!"}
+	for x, sample := range samples {
+		for i, r := range sample {
+			fmt.Println(x,i,r, string(r))
 		}
-		if i % 5 == 0 {
-			fmt.Println("Buzz", i)
-		}
-		if i % 3 == 0 {
-			fmt.Println("Fizz", i)
-			}
-		fmt.Println(i)
-		}	
-
+		fmt.Println()
 	}
+}
 
