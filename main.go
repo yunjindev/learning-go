@@ -5,16 +5,20 @@ package main
 
 import ( 
 	"fmt"
-
 )
 
 func main() {
-	samples := []string{"Hello", "apple_n!"}
-	for _, sample := range samples {
-		for i, r := range sample {
-			fmt.Println(i,r, string(r))
-		}
-		fmt.Println()
+	a := 2
+	switch 	{
+	case a == 2:
+		fmt.Println("a is 2")
+	case a == 3:
+		fmt.Println("a is 3")
+	case a == 4:
+		fmt.Println("a is 4")
+	default:
+		fmt.Println("a is ", a)
+
 	}
 }
 
