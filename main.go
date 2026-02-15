@@ -1,4 +1,4 @@
-// PAGE NUMBER: 111/374 -- FEB 12, 2026
+// PAGE NUMBER: 130/374 -- FEB 13, 2026
 // LOCK IN 
 
 package main
@@ -10,7 +10,13 @@ type Person struct {
 	FirstName string
 	LastName string
 	Age int32
+	Count int64
 }
+
+	func (p *Person) string() string {
+		p.Count++
+		return fmt.Sprintf("%s %s, age: %d, Count: %d", p.FirstName, p.LastName, p.Age, p.Count)
+	}
 
 
 
@@ -19,6 +25,8 @@ func main() {
 		FirstName: "Douglas",
 		LastName: "White",
 		Age: 33,
+		Count: 12,
 	}
-	fmt.Printf("This is %s %s, he is %d years old\n", douglas.FirstName, douglas.LastName, douglas.Age) 
+	output := douglas.string()
+	fmt.Println(output, douglas.Count)	
 }
